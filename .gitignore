@@ -1,0 +1,25 @@
+# Dependencias (obligatorio)
+node_modules/
+
+# Logs
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+lerna-debug.log*
+
+# Variables de entorno y credenciales (secreto)
+.env
+.env.local
+.env.production
+
+# Compilación y build (TypeScript/Babel)
+dist/
+build/
+
+# IDEs
+.vscode/
+.idea/
+
+# Sistema operativo
+.DS_Store
+Thumbs.db
