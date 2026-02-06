@@ -14,8 +14,7 @@ const validateUserId = (req, res, next) => {
 };
 
 const isAuthenticated = (req, res, next) => {
-    //Verificar si existe la propiedad 'user' en la sesion.
-    if (req.session & req.session.username) {
+    if (req.session && req.session.user) {
         return next();
     }
     else

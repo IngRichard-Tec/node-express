@@ -14,7 +14,7 @@ app.use(session({
     secret: 'contraseña',
     resave: false,
     saveUninitialized: false,
-    cookie: { secure: true } // Si lo ocupamos con HTTP entonces es true
+    cookie: { secure: false } // false para HTTP (localhost), true para HTTPS
 }));
 
 app.use(logRequest);

@@ -5,7 +5,7 @@ router.post('/login', (req, res) => {
     const { username, password } = req.body;
 
     //Simulación de validacion (en caso de que se maneje un BD)
-    if(username === 'richard' & password === '1234') {
+    if(username === 'richard' && password === '1234') {
 
         //CREAR LA SESION
         req.session.user = { id: 1, name: 'Ricardo Elizalde' };
